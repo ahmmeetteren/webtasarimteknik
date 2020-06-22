@@ -1,0 +1,653 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+.clear {
+    clear: both;
+}
+.body{
+  display:flex;
+  font-family:Verdana;
+}
+.sidebar{
+  width:220px;
+  background:#394958;
+  height:1000px;
+  align-items:center;
+  text-align:center;
+  
+}
+
+.content{
+  flex:1;
+  background:#2f3c48; 
+}
+
+.sidebar .title{
+  width:100%;
+  height:50px;
+  background:#2f3c48;
+  font-size:20px;
+  text-align:center;
+  padding-top:10px;
+  box-sizing:border-box;
+  
+}
+.sidebar .title a{
+  text-decoration:none;
+  color:white;
+}
+
+.sidebar .title .fa-bars{
+  padding-right:10px;
+  color: #889cad;
+}
+.sidebar .app{
+  width:100%;
+  height:40px;
+  background-color:
+#3f5161;
+  color:white;
+  border-style: dashed none dashed none;
+  border-width:1px;
+  display:flex;
+  font-size:16px;   
+}
+.sidebar .app span{
+  
+  padding-left:10px;
+  padding-top:12px;
+  
+}
+.sidebar .app .fa-square{
+  padding-left:5px;
+  padding-top:12px;
+  color:#9cb3c8;
+}
+
+.sidebar .services{
+  width:100%;
+  height:40px;
+  background-color:
+#3f5161;
+  color:white;
+  display:flex;
+  display:flex;
+  font-size:16px;
+}
+
+.sidebar .services span{
+  padding-left:10px;
+  padding-top:12px;
+}
+
+.sidebar .services .fa-chevron-down{
+  padding-left:110px;
+  padding-top:12px;
+  color:#b7d0e6;
+}
+.sidebar .services .fa-puzzle-piece{
+  padding-left:5px;
+  padding-top:10px;
+  color:#9cb3c8;
+}
+
+.sidebar .services2{
+  width:100%;
+  height:40px;
+  background-color:
+#496b8a;
+  color:white;
+  display:flex;
+  display:flex;
+  font-size:16px;
+}
+
+.sidebar .services2 span{
+  padding-top:12px;
+  padding-left:32px;
+}
+.sidebar .services3{
+  width:100%;
+  height:40px;
+  background-color:
+#394958;
+  color:white;
+  display:flex;
+  display:flex;
+  font-size:16px;
+}
+.sidebar .services3 span{
+  padding-top:12px;
+  padding-left:32px;
+}
+.sidebar .services4{
+  width:100%;
+  height:40px;
+  background-color:
+#394958;
+  color:white;
+  display:flex;
+  display:flex;
+  font-size:16px;
+}
+.sidebar .services4 span{
+  padding-top:12px;
+  padding-left:32px;
+}
+.sidebar .saphana{
+  width:100%;
+  height:40px;
+  background-color:
+#3f5161;
+  border-style: groove none none none;
+  border-width:1px;
+  color:white;
+  display:flex;
+  font-size:16px;
+  
+}
+.sidebar .saphana span{
+  padding-left:10px;
+  padding-top:12px; 
+}
+.sidebar .saphana .fa-chevron-right{
+  padding-left:90px;
+  padding-top:12px;
+  color:#b7d0e6;
+}
+.sidebar .saphana .fa-th-large{
+  padding-left:5px;
+  padding-top:12px;
+  color:#9cb3c8;
+}
+.sidebar .portal{
+  width:100%;
+  height:40px;
+  background-color:
+#3f5161;
+  border-style: groove none groove none;
+  border-width:1px;
+  color:white;
+  display:flex;
+  font-size:16px;
+}
+.sidebar .portal span{
+  padding-left:10px;
+  padding-top:12px;  
+}
+.sidebar .portal .fa-th{
+  padding-left:5px;
+  padding-top:12px;
+  color:#9cb3c8;
+}
+.sidebar .routes{
+  width:100%;
+  height:40px;
+  background-color:
+#3f5161;
+  border-style: none none groove none;
+  border-width:1px;
+  color:white;
+  display:flex;
+  font-size:16px;  
+}
+.sidebar .routes span{
+  padding-left:10px;
+  padding-top:12px; 
+}
+.sidebar .routes .fa-compress-arrows-alt{
+  padding-left:5px;
+  padding-top:12px;
+  color:#9cb3c8;
+}
+.sidebar .security{
+  width:100%;
+  height:40px;
+  background-color:
+#3f5161;
+  border-style: none none groove none;
+  border-width:1px;
+  color:white;
+  display:flex;
+  font-size:16px;  
+}
+.sidebar .security span{
+  padding-left:8px;
+  padding-top:12px; 
+}
+.sidebar .security .fa-user-shield{
+  padding-left:3px;
+  padding-top:12px;
+  color:#9cb3c8;
+}
+.sidebar .events{
+  width:100%;
+  height:40px;
+  background-color:
+#3f5161;
+  border-style: none none groove none;
+  border-width:1px;
+  color:white;
+  display:flex;
+  font-size:16px; 
+}
+.sidebar .events span{
+  padding-left:13px;
+  padding-top:12px; 
+}
+.sidebar .events .fa-calendar-alt{
+  padding-left:3px;
+  padding-top:12px;
+  color:#9cb3c8;
+}
+.sidebar .members{
+  width:100%;
+  height:40px;
+  background-color:
+#3f5161;
+  border-style: none none groove none;
+  border-width:1px;
+  color:white;
+  display:flex;
+  font-size:16px;   
+}
+.sidebar .members span{
+  padding-left:8px;
+  padding-top:12px; 
+}
+.sidebar .members .fa-users{
+  padding-left:3px;
+  padding-top:12px;
+  color:#9cb3c8;
+}
+.sidebar .empty{
+  width:100%;
+  height:140px;
+  background-color:
+#3f5161;
+  color:white;
+  display:flex;
+  font-size:16px;  
+}
+
+.sidebar .links{
+  width:100%;
+  height:40px;
+  background-color:
+#3f5161;
+  border-style: groove none groove none;
+  border-width:1px;
+  color:white;
+  display:flex;
+  font-size:16px;  
+}
+.sidebar .links span{
+  padding-left:8px;
+  padding-top:12px; 
+}
+.sidebar .fa-question-circle{
+  padding-left:3px;
+  padding-top:12px;
+  color:#9cb3c8;
+}
+.sidebar .information{
+  width:100%;
+  height:40px;
+  background-color:
+#3f5161;
+  border-style: none none groove none;
+  border-width:1px;
+  color:white;
+  display:flex;
+  font-size:16px;   
+}
+.sidebar .information span{
+  padding-left:8px;
+  padding-top:12px; 
+}
+.sidebar .information .fa-balance-scale{
+  padding-left:3px;
+  padding-top:12px;
+  color:#9cb3c8; 
+}
+.header{
+  width:100%;
+  height:50px;
+  position:absolute;
+  background-color:
+#2f3c48
+;
+  margin-left:220px;
+  display:flex;
+  flex-position:columns;
+  
+}
+.header .headercontent{
+  margin-left:900px;
+  display:flex;
+  color:#c7dff1
+}
+.header .headercontent .fa-chevron-down{
+  margin-left:8px;
+  margin-top:15px;
+}
+.header .headercontent span{
+  margin-left:15px;
+  margin-top:15px; 
+}
+.header .headercontent .fa-bookmark{
+  margin-left:15px;
+  margin-top:15px;
+  margin-right:10px;
+}
+.header .headercontent .fa-calendar-minus{
+  margin-left:15px;
+  margin-top:15px;
+}
+.maincontent{
+  width:100%;
+  height:600px;
+  position:absolute;
+  margin-left:220px;
+  margin-top:50px;
+  background-color:white
+}
+.maincontent .topmain{
+  display:flex;
+  color:#197eb9;
+  justify-content: left;
+  margin-top:12px;
+}
+.maincontent .topmain .fa-home{
+  margin-left:14px;
+}
+
+.maincontent .topmain .first{
+  margin-left:10px;
+}
+.maincontent .topmain .firstdot{
+  margin-left:10px;
+}
+.maincontent .topmain .fa-globe{
+  margin-left:10px;
+}
+.maincontent .topmain .second{
+  margin-left:10px;
+}
+.maincontent .topmain .fa-chevron-down{
+  margin-left:10px;
+}
+.maincontent .topmain .seconddot{
+  margin-left:10px;
+}
+.maincontent .topmain .fa-portrait{
+  margin-left:10px;
+}
+.maincontent .topmain .third{
+  margin-left:10px;
+}
+.maincontent .topmain .thirddot{
+  margin-left:10px;
+}
+.maincontent .topmain .fa-network-wired{
+  margin-left:10px;
+}
+.maincontent .topmain .fifth{
+  margin-left:10px;
+}
+.maincontent .topmain .fifthdot{
+  margin-left:10px;
+}
+.maincontent .topmain .fa-book-open{
+  margin-left:10px;
+}
+.maincontent .topmain .sixth{
+  margin-left:10px;
+}
+.maincontent .middlemain{
+  display:flex;
+  margin-top:20px;
+  margin-left:15px;
+}
+.maincontent .middlemain span{
+  margin-left:10px;
+  font-size:26px;
+}
+.maincontent .middlemain .fa-puzzle-piece{
+  margin-top:6px;
+}
+.maincontent .number{
+  margin-left:14px;
+  margin-top:10px;
+  font-size:15px;
+}
+.maincontent .searchbar{
+  position:absolute;
+  border-style:groove;
+  border-width:1px;
+  margin-left:910px;
+  margin-top:30px;
+  font-size:17px;
+}
+.maincontent .fonksiyon{
+  display:flex;
+  width:100%;
+  height:600px;
+  background-color:#fafafa;
+  position:absolute;
+  margin-top:90px;
+}
+.maincontent .fonksiyon .apimanagement{
+  display:flex;
+  width:280px;
+  height:180px;
+  background-color:white;
+  position:absolute;
+  margin-top:18px;
+  margin-left:14px;
+  justify-content: left;
+  border-style:groove;
+  border-width:1px;
+  border-color:white;
+}
+.maincontent .fonksiyon .apimanagement .content1{
+  display:flex;
+  width:100%;
+  height:40px;
+  position:absolute;
+}
+.maincontent .fonksiyon .apimanagement .content1 .fa-puzzle-piece{
+  margin-top:10px;
+  margin-left:10px;
+  color:#1d78a9;
+}
+.maincontent .fonksiyon .apimanagement .content1 .cumle1{
+  margin-top:10px;
+  margin-left:10px;
+  color:#1d78a9;
+}
+.maincontent .fonksiyon .apimanagement .content2{
+  margin-top:50px;
+  margin-left:10px;
+  position:absolute;
+  width:270px;
+  height:20px;
+}
+.maincontent .fonksiyon .apimanagement .content3{
+  margin-top:80px;
+  margin-left:10px;
+  position:absolute;
+  width:230px;
+  height:50px;
+  margin-left:50px;
+}
+.maincontent .fonksiyon .apimanagement .content4{
+  width:40px;
+  height:60px;
+  margin-top:80px;
+}
+.maincontent .fonksiyon .apimanagement .content4 .fa-network-wired{
+  margin-top:5px;
+  font-size:30px;
+  margin-left:5px;
+  color:#0092d1;
+}
+.maincontent .fonksiyon .appscale{
+  display:flex;
+  width:280px;
+  height:180px;
+  background-color:white;
+  position:absolute;
+  margin-top:18px;
+  margin-left:320px;
+  justify-content: left;
+  border-style:groove;
+  border-width:1px;
+  border-color:white;
+}
+.maincontent .fonksiyon .appscale .content1{
+  display:flex;
+  width:100%;
+  height:40px;
+  position:absolute;
+}
+.maincontent .fonksiyon .appscale .content1 .fa-puzzle-piece{
+  margin-top:10px;
+  margin-left:10px;
+  color:#1d78a9;
+}
+.maincontent .fonksiyon .appscale .content1 span{
+  margin-top:10px;
+  margin-left:10px;
+  color:#1d78a9;
+}
+.maincontent .fonksiyon .appscale .content2{
+  margin-top:50px;
+  margin-left:10px;
+  position:absolute;
+  width:270px;
+  height:20px;
+}
+.maincontent .fonksiyon .appscale .content3{
+  margin-top:80px;
+  margin-left:10px;
+  position:absolute;
+  width:230px;
+  height:50px;
+  margin-left:50px;
+}
+.maincontent .fonksiyon .appscale .content4{
+  width:40px;
+  height:60px;
+  margin-top:80px;
+}
+.maincontent .fonksiyon .appscale .content4 .fa-external-link-alt{
+  margin-top:5px;
+  font-size:30px;
+  margin-left:5px;
+  color:#0092d1;
+}
+.maincontent .fonksiyon .applogin{
+  display:flex;
+  width:280px;
+  height:180px;
+  background-color:white;
+  position:absolute;
+  margin-top:18px;
+  margin-left:630px;
+  justify-content: left;
+  border-style:groove;
+  border-width:1px;
+  border-color:white;
+}
+.maincontent .fonksiyon .applogin .content1{
+  display:flex;
+  width:100%;
+  height:40px;
+  position:absolute;
+}
+.maincontent .fonksiyon .applogin .content1 .fa-puzzle-piece{
+  margin-top:10px;
+  margin-left:10px;
+  color:#1d78a9;
+}
+.maincontent .fonksiyon .applogin .content1 span{
+  margin-top:10px;
+  margin-left:10px;
+  color:#1d78a9;
+}
+.maincontent .fonksiyon .applogin .content2{
+  margin-top:50px;
+  margin-left:10px;
+  position:absolute;
+  width:270px;
+  height:20px;
+}
+.maincontent .fonksiyon .applogin .content3{
+  margin-top:80px;
+  margin-left:10px;
+  position:absolute;
+  width:230px;
+  height:50px;
+  margin-left:50px;
+}
+.maincontent .fonksiyon .applogin .content4{
+  width:40px;
+  height:60px;
+  margin-top:80px;
+}
+.maincontent .fonksiyon .applogin .content4 .fa-poll{
+  margin-top:5px;
+  font-size:30px;
+  margin-left:5px;
+  color:#0092d1;
+}
+
+
